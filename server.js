@@ -57,6 +57,10 @@ app.post('/register', async (req, res) => {
         return res.status(400).send('Todos los campos son obligatorios.');
     }
 
+    if (!correo.includes('@') || !correo.includes('.')) {
+        return res.status(400).send('Correo inválido.');
+    }
+
     try {
 
         const hashedPassword = await bcrypt.hash(password, 10);
