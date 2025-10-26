@@ -1,0 +1,56 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card, .register-info-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.login-card h2 {
+  color: #2E8B57;
+  font-weight: bold;
+}
+
+.register-info-card h2 {
+  color: #2E8B57;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.register-info-card p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 10px 15px;
+}
+
+.form-control:focus {
+  border-color: #2E8B57;
+  box-shadow: 0 0 0 0.2rem rgba(46, 139, 87, 0.25);
+}
+
+.btn-success {
+  background-color: #2E8B57;
+  border-color: #2E8B57;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background-color: #228B22;
+  border-color: #228B22;
+}

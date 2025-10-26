@@ -1,0 +1,45 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.historia {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+
+.historia h1 {
+  color: #2E8B57;
+  font-weight: bold;
+}
+
+.historia p {
+  color: #6c757d;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.sucursales h2 {
+  color: #2E8B57;
+  font-weight: bold;
+}
+
+.sucursales li {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mapa h2 {
+  color: #2E8B57;
+  font-weight: bold;
+}
+
+.mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

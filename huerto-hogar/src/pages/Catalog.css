@@ -1,0 +1,66 @@
+.catalog-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters-sidebar {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-right: 1px solid #e9ecef;
+  min-height: calc(100vh - 76px);
+}
+
+.filters-sidebar h2 {
+  color: #2E8B57;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-toggle {
+  color: #2E8B57;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.filter-toggle:hover {
+  color: #228B22;
+}
+
+.filter-options {
+  margin-top: 10px;
+  display: none;
+}
+
+.filter-options .form-check {
+  margin-bottom: 8px;
+}
+
+.products-section {
+  padding: 20px;
+}
+
+.products-count-and-sort {
+  margin-bottom: 15px;
+}
+
+.products-count {
+  font-weight: 600;
+  color: #2E8B57;
+}
+
+.product-placeholder {
+  border: 2px dashed #dee2e6;
+  height: 200px;
+}
+
+.product-placeholder .card-body {
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
