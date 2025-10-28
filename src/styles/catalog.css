@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap'); /* Importa la fuente Montserrat de Google Fonts */
+* {
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno interno por defecto */
+    box-sizing: border-box; /* Incluir padding y border en el tamaño total */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Establecer la fuente para el cuerpo */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding-top: 60px;  /* Espacio para el header fijo */
+}
+
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Alinea el header arriba */
+    left: 0; /* Alinea el header a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    height: 60px; /* Altura fija del header */
+    line-height: 60px; /* Centra verticalmente el contenido */
+    background: rgba(18, 18, 18, 0.9); /* Fondo oscuro con transparencia */
+    backdrop-filter: blur(10px); /* Aplica desenfoque al fondo */
+    display: flex; /* Usa flexbox para el layout interno */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    padding: 0 30px; /* Espaciado lateral */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para fondo y sombra */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+header.scrolled {
+    background: rgba(18, 18, 18, 0.6); /* Cambia el fondo al hacer scroll */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7); /* Agrega sombra al hacer scroll */
+}
+
+.logo {
+    display: flex; /* Usa flexbox para el logo */
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2rem; /* Tamaño de fuente del logo */
+    color: #fff; /* Color blanco para el logo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+}
+
+.logo img {
+    height: 40px; /* Altura de la imagen del logo */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Usa flexbox para los enlaces de navegación */
+    gap: 25px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: #eee; /* Color claro para los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: 500; /* Peso de fuente medio */
+    transition: color 0.3s ease; /* Transición suave al cambiar color */
+}
+
+nav ul li a:hover {
+    color: #26ac31; /* Cambia el color al pasar el mouse */
+}
+
+.catalog-container {
+    display: flex; /* Usa flexbox para el layout principal */
+    gap: 20px; /* Espacio entre sidebar y productos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 40px auto; /* Centra el contenedor y agrega espacio vertical */
+    padding: 0 20px; /* Espaciado lateral */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start; /* Alinea los elementos arriba */
+}
+
+
+.filters-sidebar {
+    width: 250px; /* Ancho fijo de la barra lateral */
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra suave */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+}
+
+.filters-sidebar h2 {
+    margin-bottom: 15px; /* Espacio debajo del título */
+    font-weight: 700; /* Título en negrita */
+    color: #2E8B57; /* Color verde para el título */
+}
+
+.filter-group {
+    margin-bottom: 15px; /* Espacio debajo de cada grupo de filtros */
+}
+
+.filter-toggle {
+    width: 100%; /* Ocupa todo el ancho */
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    font-weight: 600; /* Texto semi-negrita */
+    font-size: 1rem; /* Tamaño de fuente */
+    text-align: left; /* Alinea el texto a la izquierda */
+    cursor: pointer; /* Cursor de mano */
+    padding: 8px 0; /* Espaciado vertical */
+    color: #2E8B57; /* Color verde */
+    position: relative; /* Para posicionar el icono */
+}
+
+.filter-toggle::after {
+    content: "▼"; /* Agrega una flecha hacia abajo */
+    position: absolute; /* Posiciona absolutamente la flecha */
+    right: 0; /* A la derecha */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+    font-size: 0.8rem; /* Tamaño de la flecha */
+    color: #2E8B57; /* Color verde */
+}
+
+.filter-toggle > svg {
+    display: none; /* Oculta cualquier SVG dentro del botón */
+}
+
+.filter-options {
+    margin-top: 8px; /* Espacio arriba de las opciones */
+    display: none; /* Oculta las opciones por defecto */
+    opacity: 0; /* Hace las opciones invisibles */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+}
+
+.filter-options label {
+    display: block; /* Cada opción en una línea */
+    margin-bottom: 6px; /* Espacio debajo de cada opción */
+    cursor: pointer; /* Cursor de mano */
+}
+
+.products-section {
+    flex: 1; /* Ocupa el espacio restante */
+}
+
+.products-count {
+    margin-bottom: 15px; /* Espacio debajo del contador */
+    font-weight: 600; /* Texto semi-negrita */
+    color: #2E8B57; /* Color verde */
+}
+
+.products-grid { 
+    display: grid; /* Usa grid para los productos */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 20px; /* Espacio entre productos */
+}
+
+.product-placeholder { 
+    background: #e0e0e0; /* Fondo gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    height: 300px; /* Altura fija */
+    animation: pulse 1.5s infinite ease-in-out; /* Animación de carga */
+}
+
+@keyframes pulse {
+    0% { background-color: #e0e0e0; } /* Color inicial */
+    50% { background-color: #f0f0f0; } /* Color intermedio */
+    100% { background-color: #e0e0e0; } /* Color final */
+}
+
+.product-card { 
+    background: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Sombra suave */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    font-size: 0.9rem; /* Tamaño de fuente */
+    color: #333; /* Color de texto */
+    position: relative; /* Para posicionar elementos internos */
+}
+
+.product-card img {
+    max-width: 100%; /* Imagen no supera el ancho del contenedor */
+    height: auto; /* Altura automática */
+    border-radius: 6px; /* Bordes redondeados */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+}
+
+.product-card h3 {
+    font-size: 1.1rem; /* Tamaño del nombre del producto */
+    margin-bottom: 5px; /* Espacio debajo del nombre */
+    color: #2E8B57; /* Color verde */
+}
+
+.product-card .brand {
+    font-size: 0.8rem; /* Tamaño de la marca */
+    color: #666; /* Color gris */
+    margin-bottom: 5px; /* Espacio debajo de la marca */
+}
+
+.product-card .price {
+    font-weight: 700; /* Precio en negrita */
+    color: #26ac31; /* Color verde */
+    margin-bottom: 5px; /* Espacio debajo del precio */
+}
+
+.product-card .reviews {
+    font-size: 0.8rem; /* Tamaño de las reseñas */
+    color: #999; /* Color gris claro */
+}
+
+.out-of-stock {
+    position: absolute; /* Posiciona absolutamente la etiqueta */
+    top: 10px; /* 10px desde arriba */
+    right: 10px; /* 10px desde la derecha */
+    background: #999; /* Fondo gris */
+    color: white; /* Texto blanco */
+    padding: 3px 8px; /* Espaciado interno */
+    font-size: 0.75rem; /* Tamaño de fuente pequeño */
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+    .filters-sidebar {
+        width: 200px; /* Reduce el ancho de la barra lateral */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px; /* Más espacio para header en móvil */
+    }
+    .catalog-container {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        max-width: 100%; /* Ocupa todo el ancho */
+        margin: 20px 10px; /* Reduce el margen */
+    }
+    .filters-sidebar {
+        width: 100%; /* Barra lateral ocupa todo el ancho */
+        margin-bottom: 20px; /* Espacio debajo de la barra lateral */
+    }
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+}

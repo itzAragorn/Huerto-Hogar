@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap'); /* Importa la fuente Montserrat de Google Fonts */
+header {
+    margin: 0; /* Elimina el margen por defecto del header */
+    padding: 0; /* Elimina el relleno interno del header */
+    box-sizing: border-box; /* Incluye el padding y border en el tamaño total */
+  }
+        
+        header {
+            font-family: 'Montserrat',sans-serif; /* Establece la fuente para el header */
+            position: fixed; /* Fija el header en la parte superior */
+            top: 0; /* Alinea el header arriba */
+            left: 0; /* Alinea el header a la izquierda */
+            width: 100%; /* Ocupa todo el ancho */
+            background: rgba(18, 18, 18, 0.9); /* Fondo oscuro con transparencia */
+            backdrop-filter: blur(10px); /* Aplica desenfoque al fondo */
+            display: flex; /* Usa flexbox para el layout interno */
+            align-items: center; /* Centra verticalmente los elementos */
+            justify-content: space-between; /* Espacia los elementos a los extremos */
+            padding: 10px 30px; /* Espaciado interno superior/inferior y laterales */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para fondo y sombra */
+            z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+        }
+
+        header.scrolled {
+            background: rgba(18, 18, 18, 0.6); /* Cambia el fondo al hacer scroll */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.7); /* Agrega sombra al hacer scroll */
+        }
+
+        .logo {
+            display: flex; /* Usa flexbox para el logo */
+            align-items: center; /* Centra verticalmente el logo y el texto */
+            font-weight: bold; /* Texto en negrita */
+            font-size: 1.2rem; /* Tamaño de fuente del logo */
+            color: #fff; /* Color blanco para el logo */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+        }
+
+        .logo img {
+            height: 40px; /* Altura de la imagen del logo */
+            margin-right: 10px; /* Espacio a la derecha de la imagen */
+        }
+
+        nav ul {
+            list-style: none; /* Quita los puntos de la lista */
+            display: flex; /* Usa flexbox para los enlaces de navegación */
+            gap: 25px; /* Espacio entre los elementos de la lista */
+        }
+
+        nav ul li a {
+            color: #eee; /* Color claro para los enlaces */
+            text-decoration: none; /* Quita el subrayado de los enlaces */
+            font-weight: 500; /* Peso de fuente medio */
+            transition: color 0.3s ease; /* Transición suave al cambiar color */
+        }
+
+        nav ul li a:hover {
+            color: #26ac31; /* Cambia el color al pasar el mouse */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif; /* Establece la fuente para el cuerpo */
+            line-height: 1.6; /* Mejora la legibilidad del texto */
+            background: #f7f7f7; /* Color de fondo claro */
+            color: #333333; /* Color de texto oscuro */
+        }
+
+        .register-container {
+            width: 350px; /* Ancho fijo del contenedor de registro */
+            margin: 100px auto; /* Centra el contenedor y agrega espacio superior */
+            padding: 30px; /* Espaciado interno */
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+          }
+
+          .register-container h2 {
+            text-align: center; /* Centra el título */
+            margin-bottom: 20px; /* Espacio debajo del título */
+          }
+
+          .register-container label {
+            display: block; /* Cada etiqueta en una línea */
+            margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+            font-weight: bold; /* Texto en negrita */
+          }
+
+          .register-container input {
+            width: 100%; /* Ocupa todo el ancho */
+            padding: 10px; /* Espaciado interno */
+            margin-bottom: 15px; /* Espacio debajo del input */
+            border: 1px solid #ccc; /* Borde gris claro */
+            border-radius: 4px; /* Bordes redondeados */
+          }
+
+          .register-container button {
+            width: 100%; /* Ocupa todo el ancho */
+            padding: 12px; /* Espaciado interno */
+            background-color: #2E8B57; /* Fondo verde */
+            border: none; /* Sin borde */
+            color: #fff; /* Texto blanco */
+            font-size: 16px; /* Tamaño de fuente */
+            border-radius: 4px; /* Bordes redondeados */
+            cursor: pointer; /* Cursor de mano */
+          }
+
+          .register-container button:hover {
+            background-color: #4cae4c; /* Cambia el fondo al pasar el mouse */
+          }
+          
+          #error-message {
+            color: red; /* Texto rojo */
+            text-align: center; /* Centra el texto */
+            margin-top: 10px; /* Espacio superior */
+          }
+
+          @media (max-width: 768px) {
+              nav ul {
+                  gap: 15px; /* Reduce el espacio entre enlaces en móvil */
+              }
+              .logo img {
+                  height: 30px; /* Reduce el tamaño del logo en móvil */
+              }
+          }

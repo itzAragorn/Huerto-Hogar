@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap'); /* Importa la fuente Montserrat de Google Fonts */
+* {
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 0; /* Eliminar relleno interno predeterminado */
+    box-sizing: border-box; /* Incluir el padding y border en el tamaño total del elemento */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Establecer la fuente para el cuerpo */
+    line-height: 1.6; /* Mejorar la legibilidad del texto */
+    background: #f7f7f7; /* Color de fondo claro */
+    color: #333333; /* Color de texto oscuro para buen contraste */
+}
+
+header {
+    font-family: 'Montserrat',sans-serif; /* Establecer la fuente para el encabezado */
+    position: fixed; /* Fijar el encabezado en la parte superior */
+    top: 0; /* Alinear el encabezado en la parte superior */
+    left: 0; /* Alinear el encabezado a la izquierda */
+    width: 100%; /* Hacer que el encabezado ocupe todo el ancho */
+    background: rgba(18, 18, 18, 0.9); /* Fondo oscuro con transparencia */
+    backdrop-filter: blur(10px); /* Aplica desenfoque al fondo del encabezado */
+    display: flex; /* Usa flexbox para el layout interno */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    padding: 10px 30px; /* Espaciado interno superior/inferior y laterales */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para color de fondo y sombra */
+    z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+
+header.scrolled {
+    background: rgba(18, 18, 18, 0.6); /* Cambia el fondo al hacer scroll */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7); /* Agrega sombra al hacer scroll */
+}
+
+.logo {
+    display: flex; /* Usa flexbox para el logo */
+    align-items: center; /* Centra verticalmente el logo y el texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2rem; /* Tamaño de fuente del logo */
+    color: #fff; /* Color blanco para el logo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+}
+
+.logo img {
+    height: 40px; /* Altura de la imagen del logo */
+    margin-right: 10px; /* Espacio a la derecha de la imagen */
+}
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    display: flex; /* Usa flexbox para los enlaces de navegación */
+    gap: 25px; /* Espacio entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: #eee; /* Color claro para los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: 500; /* Peso de fuente medio */
+    transition: color 0.3s ease; /* Transición suave al cambiar color */
+
+}
+nav ul li a:hover {
+    color: #26ac31; /* Cambia el color al pasar el mouse */
+}
+
+main {
+    margin-top: 80px; /* Espacio superior para no tapar el contenido con el header fijo */
+    padding: 20px 30px; /* Espaciado interno del contenido principal */
+}
+
+section {
+    max-width: 900px; /* Ancho máximo de la sección */
+    margin: 40px auto; /* Centra la sección y agrega espacio vertical */
+}
+
+h1 {
+    font-size: 2.5rem; /* Tamaño grande para títulos principales */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+p {
+    font-size: 1.1rem; /* Tamaño de fuente para párrafos */
+}
+
+.blog-container {
+    max-width: 900px; /* Ancho máximo del contenedor del blog */
+    margin: 50px auto; /* Centra el contenedor y agrega espacio vertical */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.blog-container h1 {
+    font-size: 2rem; /* Tamaño de fuente para el título del blog */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    color: #2E8B57; /* Color verde para el título */
+    text-align: center; /* Centra el texto */
+}
+
+.blog-post {
+    background: #fff; /* Fondo blanco para cada post */
+    padding: 20px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio debajo de cada post */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.post-header {
+    display: flex; /* Usa flexbox para el encabezado del post */
+    justify-content: space-between; /* Espacia el título y la fecha */
+    margin-bottom: 10px; /* Espacio debajo del encabezado */
+}
+
+.post-header h2 {
+    font-size: 1.2rem; /* Tamaño de fuente para el título del post */
+    color: #2E8B57; /* Color verde para el título */
+}
+
+.post-date {
+    font-size: 0.85rem; /* Tamaño pequeño para la fecha */
+    color: #999; /* Color gris para la fecha */
+}
+
+.blog-post p {
+    font-size: 1rem; /* Tamaño de fuente para el texto del post */
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+footer {
+    background: #121212; /* Fondo oscuro para el pie de página */
+    color: #eee; /* Texto claro */
+    text-align: center; /* Centra el texto */
+    padding: 40px 20px; /* Espaciado interno */
+    margin-top: 50px; /* Espacio superior antes del footer */
+
+}
+
+footer h3 {
+    margin-bottom: 15px; /* Espacio debajo del subtítulo */
+}
+
+footer p {
+    margin-bottom: 8px; /* Espacio debajo de los párrafos */
+}
+
