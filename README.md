@@ -1,6 +1,7 @@
 # 🌿 Huerto Hogar
 
-![Portada](./6356bcaa-e3ee-4f98-979d-9cb39bb8fb66.png)
+<img width="1861" height="922" alt="image" src="https://github.com/user-attachments/assets/e857336f-244d-4b68-917b-b8b1c89481e8" />
+
 
 **Huerto Hogar** es una aplicación web desarrollada con **React** que promueve el cultivo doméstico y la autogestión alimentaria.  
 Su objetivo es ofrecer una experiencia práctica y educativa, desde la siembra hasta la cosecha, todo **directamente desde tu navegador**.
@@ -76,10 +77,12 @@ npm run test:all
 ### 📸 Ejemplos de ejecución
 
 **Karma + Jasmine en Visual Studio Code**  
-![Tests con Karma y Jasmine](./4ec55167-173a-4296-8bdf-236ecb252635.png)
+![Tests con Karma y Jasmine]<img width="975" height="429" alt="image" src="https://github.com/user-attachments/assets/cebd7010-7b4b-4396-befe-b42beed06048" />
+
 
 **Jest con errores y éxitos**  
-![Tests con Jest](./a7414db7-6e8e-45b4-a4ea-f0344fad4556.png)
+![Tests con Jest]<img width="975" height="679" alt="image" src="https://github.com/user-attachments/assets/c36b5792-d792-429a-ac43-2a6183ad2668" />
+
 
 ---
 
