@@ -3,15 +3,14 @@
 <img width="1861" height="922" alt="image" src="https://github.com/user-attachments/assets/e857336f-244d-4b68-917b-b8b1c89481e8" />
 
 
-**Huerto Hogar** es una aplicación web desarrollada con **React** que promueve el cultivo doméstico y la autogestión alimentaria.  
-Su objetivo es ofrecer una experiencia práctica y educativa, desde la siembra hasta la cosecha, todo **directamente desde tu navegador**.
+**Huerto Hogar** es una aplicación web desarrollada con **React** que promueve el cultivo doméstico y la autogestión alimentaria.
 
 ---
 
 ## 🏡 Características principales
 
 - 🌱 Catálogo de productos naturales y semillas  
-- 🧺 Interfaz moderna y adaptable a distintos dispositivos  
+- 🧺 Interfaz moderna
 - 💾 Persistencia de datos con **localStorage**  
 - 🔒 Flujo de autenticación local: registro e inicio de sesión  
 - ⚙️ Desplegada en **AWS EC2 (Ubuntu)** con **Nginx** como servidor estático  
