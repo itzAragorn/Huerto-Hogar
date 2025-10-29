@@ -142,6 +142,11 @@ Huerto-Hogar/
 
 ---
 
+## ERS Proyecto
+
+[ERS Huerto Hogar.docx](https://github.com/user-attachments/files/23202234/ERS.Huerto.Hogar.docx)
+
+
 ## 📜 Licencia
 
 Este proyecto está bajo la licencia **MIT**.  
