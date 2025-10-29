@@ -94,7 +94,7 @@ La aplicación está desplegada en una instancia **Ubuntu (EC2)** sirviendo el b
 
 ```bash
 # En el servidor
-cd /var/www/Huerto-Hogar/huerto-hogar
+cd /var/www/Huerto-Hogar
 git pull origin main
 npm run build
 
@@ -105,7 +105,7 @@ sudo systemctl restart nginx
 El sitio se sirve desde:
 
 ```
-/var/www/Huerto-Hogar/huerto-hogar/build
+/var/www/Huerto-Hogar/build
 ```
 
 ---
